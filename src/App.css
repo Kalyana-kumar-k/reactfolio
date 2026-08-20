@@ -5,20 +5,93 @@
 
 .light {
   --navbar: white;
+  --navbar-link: #cf6a87;
   --background: white;
-  --heading: #1289a7;
+  --heading: #cf6a87;
   --text: #596275;
   --text-alt: #485460;
   --btn-text: white;
-  --btn-bg: #1289a7;
+  --btn-bg: #cf6a87;
+  --hovering-text: #cf6a87;
+  --shadow:
+    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+  --shadow-alt: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .dark {
-  --navbar: #171e23;
-  --background: #022843;
-  --heading: #efe6dd;
+  --navbar: #2c2c54;
+  --navbar-link: #70a1ff;
+  --background: #171e23;
+  --heading: #70a1ff;
   --text: #c7ecee;
   --text-alt: #d2dae2;
   --btn-text: #130f40;
-   --btn-bg: #d2dae2;
+  --btn-bg: #70a1ff;
+  --hovering-text: #70a1ff;
+  --shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+  --shadow-alt: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}
+
+.hovering {
+  padding: 0 0 0.3em 0;
+  position: relative;
+}
+
+.hovering::before {
+  content: "";
+  display: inline;
+  width: 0%;
+  height: 0.2em;
+  position: absolute;
+  bottom: 0;
+  background-color: var(--hovering-text);
+  transition: width 0.2s ease-in;
+}
+
+.hovering:hover::before,
+.hovering:focus::before {
+  width: 100%;
+}
+
+.water-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--btn-bg);
+  border:2px solid var(--btn-bg);
+  outline: none;
+  border-radius: 8px;
+  background-color: transparent;
+  overflow: hidden;
+  transition: color 0.4s ease-in-out;
+}
+
+.water-btn::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background-color:var(--btn-bg);
+  transition: height 0.4s ease-in-out;
+  z-index: 1;
+}
+
+.water-btn span {
+  position: relative;
+  z-index: 2;
+}
+
+.water-btn:hover::before {
+  height: 100%;
+}
+
+.water-btn:hover {
+  color: var(--btn-text);
 }

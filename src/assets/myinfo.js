@@ -1,7 +1,7 @@
 const header = {
   // all the properties are optional - can be left empty or deleted
   homepage: "#",
-  title: "Reactfolio",
+  title: "REACTFOLIO",
 };
 
 const about = {
@@ -11,7 +11,7 @@ const about = {
   picture: "https://i.ibb.co/XffTnq92/IMG-1234.jpg",
 
   description:
-    "I build responsive user-focused frontends with React, backed by solid full-stack experience in PHP and MySql.This end-to-end perspective helps me build smarter user interfaces that arefully optimized for data exchange and real-world performance. Adaptable, eager to learn new technologies, and driven to contribute effectively to high-quality web projects from day one.",
+    "I build responsive user-focused frontends with React, backed by solid full-stack experience in PHP and MySql.This end-to-end perspective helps me build smarter user interfaces that carefully optimized for data exchange and real-world performance. Adaptable, eager to learn new technologies, and driven to contribute effectively to high-quality web projects from day one.",
   resume:
     "https://drive.google.com/file/d/1PH2jZidgowhAeAYtR-zP6Nl2copxFbS_/view?usp=drive_link",
   social: {
@@ -68,18 +68,19 @@ const skills = [
   // if there are no skills, Skills section won't show up
   "HTML5  ",
   "CSS3",
+  "Tailwindcss",
   "JavaScript",
   "React Js",
-  "Redux",
   "PHP",
   "MySql",
-  "Git",
-  "GitHub",
 ];
+
+const tools = ["Vs code", "XAMPP", "Vite", "Redux", "Git", "GitHub"];
 
 const contact = {
   // email is optional - if left empty Contact section won't show up
   email: "kalyankutty1994@gmail.com",
+  phone: "+919677529087",
 };
 
-export { header, about, projects, skills, contact };
+export { header, about, projects, skills, tools, contact };
