@@ -1,0 +1,24 @@
+#app {
+  font-family: var(--poppins);
+  background-color: var(--background);
+}
+
+.light {
+  --navbar: white;
+  --background: white;
+  --heading: #1289a7;
+  --text: #596275;
+  --text-alt: #485460;
+  --btn-text: white;
+  --btn-bg: #1289a7;
+}
+
+.dark {
+  --navbar: #171e23;
+  --background: #022843;
+  --heading: #efe6dd;
+  --text: #c7ecee;
+  --text-alt: #d2dae2;
+  --btn-text: #130f40;
+   --btn-bg: #d2dae2;
+}
