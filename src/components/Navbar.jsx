@@ -9,30 +9,22 @@ const Navbar = () => {
   const { theme, toggleTheme } = useTheme();
   return (
     <nav
-      className="w-full fixed top-0 left-0 z-100 p-2 h-16 flex justify-between items-center gap-x-10 shadow-xl 
-    bg-[var(--navbar)] text-[var(--text-alt)] max-sm:flex-col max-sm:items-start max-sm:w-vw"
+      className="w-full fixed top-0 left-0 z-100 p-2 h-16 flex justify-between items-center gap-x-10 
+      shadow-[var(--shadow-navbar)] bg-[var(--navbar)] text-[var(--text-alt)] max-sm:flex-col"
     >
-      <div className="flex">
-        <button
-          onClick={toggleTheme}
-          className="me-5 outline-none text-xl cursor-pointer"
-        >
-          {theme === "light" ? <MdLightMode /> : <MdDarkMode />}
-        </button>
-        <a
-          href={homepage}
-          className="font-semibold text-[var(--navbar-link)] hovering"
-        >
-          {title}
-        </a>
-      </div>
+      <a
+        href={homepage}
+        className="font-bold text-2xl text-[var(--navbar-link)] max-sm:text-sm hovering"
+      >
+        {title}
+      </a>
 
-      <div className="flex gap-3 text-[var(--navbar-link)]">
+      <div
+        className="flex gap-4 text-2xl text-[var(--navbar-link)] 
+      max-sm:text-sm max-sm:justify-evenly"
+      >
         <a href="#home" className="hovering">
           Home
-        </a>
-        <a href="#about" className="hovering">
-          About
         </a>
         <a href="#skills" className="hovering">
           Skills
@@ -43,6 +35,12 @@ const Navbar = () => {
         <a href="#contact" className="hovering">
           Contact
         </a>
+        <button
+          onClick={toggleTheme}
+          className="me-5 outline-none text-2xl cursor-pointer"
+        >
+          {theme === "light" ? <MdDarkMode /> : <MdLightMode />}
+        </button>
       </div>
     </nav>
   );

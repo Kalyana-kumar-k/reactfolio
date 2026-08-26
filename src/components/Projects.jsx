@@ -12,8 +12,7 @@ const Projects = () => {
       <hr className="text-[var(--text)] mb-10" />
 
       <div
-        className="grid grid-cols-2 gap-10 max-lg:grid-cols-3 
-      max-md:grid-cols-2 max-sm:grid-cols-1"
+        className="grid grid-cols-2 gap-10 max-md:grid-cols-1"
       >
         {projects.map((project) => {
           return (
@@ -42,7 +41,8 @@ const Projects = () => {
                   return (
                     <li
                       key={index}
-                      className="rounded-md px-2 py-2 text-[var(--text)] shadow-[var(--shadow-alt)]"
+                      className="rounded-md px-2 py-2 text-[var(--text)] 
+                      border border-blue-500"
                     >
                       {item}
                     </li>
@@ -53,7 +53,8 @@ const Projects = () => {
                     return (
                       <li
                         key={index}
-                        className="rounded-md px-2 py-2 text-[var(--text)] shadow-[var(--shadow-alt)]"
+                        className="rounded-md px-2 py-2 text-[var(--text)] 
+                         border border-blue-500"
                       >
                         {item}
                       </li>

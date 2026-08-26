@@ -4,7 +4,7 @@ import { RiRadioButtonLine } from "react-icons/ri";
 import { about } from "../assets/myinfo";
 const Footer = () => {
   return (
-    <footer className="w-full p-5 bg-[var(--navbar)] shadow-[var(--shadow-alt)]">
+    <footer className="w-full p-5 text-2xl bg-[var(--navbar)] shadow-[var(--shadow-alt)] max-md:text-lg">
       <div className="text-[var(--navbar-link)]  flex justify-center items-center gap-5">
         <a
           href={about.social.github}
@@ -31,17 +31,13 @@ const Footer = () => {
           Resume
         </a>
       </div>
-      <div className="text-[var(--text)] flex justify-center items-center gap-5">
+      <div className="text-[var(--text)] flex justify-center items-center gap-1">
+        <RiRadioButtonLine className="text-green-400" />
+        <span> Open to new oppurtunities.</span>
+      </div>
+      <div className="text-[var(--text)] flex justify-center items-center gap-4 max-md:items-start">
         <FaRegCopyright />
         <span> 2026 | {about.name} | All Rights Reserved.</span>
-      </div>
-      <div className="text-[var(--text)] flex justify-center items-center gap-5">
-        <RiRadioButtonLine className="text-green-400" />
-        <span>
-          {" "}
-          Open to new oppurtunities | Have an idea? Let's build Something
-          together.
-        </span>
       </div>
     </footer>
   );

@@ -1,6 +1,6 @@
 const header = {
   // all the properties are optional - can be left empty or deleted
-  homepage: "#",
+  homepage: "https://reactfolio-jade-eta.vercel.app/",
   title: "REACTFOLIO",
 };
 
@@ -26,7 +26,7 @@ const projects = [
   {
     name: "Project 1",
     description:
-      " Built a full-stack web platform featuring secure user signup, session-based login validation, automated transaction billing and managed local development using XAMPP (Apache/MySQL).",
+      " Built a full-stack desktop web platform featuring secure user signup, session-based login validation, automated transaction billing and managed local development using XAMPP (Apache/MySQL).",
     stack: ["HTML5", "CSS3", "JavaScript", "PHP", "MySQL"],
     environment: ["XAMPP (Local development)", "VS  Code"],
     sourceCode: "https://github.com/Kalyana-kumar-k/fruit-festia",
@@ -36,7 +36,7 @@ const projects = [
   {
     name: "Project 2",
     description:
-      " Developed a secure User Management System using PHP PDO to handle complete CRUD operations, efficient data pagination to optimize page load limits with robust MySQL database connectivity. ",
+      " Developed a desktop secure User Management System using PHP PDO to handle complete CRUD operations, efficient data pagination to optimize page load limits with robust MySQL database connectivity. ",
     stack: ["HTML5", "CSS3", "JavaScript", "PHP (PDO)", "MySQL"],
     environment: ["XAMPP (Local development)", "VS  Code"],
     sourceCode: "http://github.com/kalyana-kumar-k/usermanagement-php",

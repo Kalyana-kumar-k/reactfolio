@@ -5,36 +5,46 @@
 
 .light {
   --navbar: white;
-  --navbar-link: #cf6a87;
+  --navbar-link: black;
   --background: white;
-  --heading: #cf6a87;
+  --heading: #2563eb;
   --text: #596275;
   --text-alt: #485460;
   --btn-text: white;
-  --btn-bg: #cf6a87;
-  --hovering-text: #cf6a87;
+  --btn-bg: #2563eb;
+  --hovering-text: #2563eb;
   --shadow:
     rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
   --shadow-alt: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  --shadow-navbar:
+    rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
 .dark {
-  --navbar: #2c2c54;
-  --navbar-link: #70a1ff;
+  --navbar: #121212;
+  --navbar-link: #70faff;
   --background: #171e23;
-  --heading: #70a1ff;
+  --heading: #70faff;
   --text: #c7ecee;
   --text-alt: #d2dae2;
   --btn-text: #130f40;
-  --btn-bg: #70a1ff;
-  --hovering-text: #70a1ff;
+  --btn-bg: #70faff;
+  --hovering-text: #70faff;
   --shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
   --shadow-alt: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+  --shadow-navbar:
+    0 4px 6px -1px rgba(15, 23, 42, 0.4),
+    0 12px 28px -4px rgba(30, 58, 138, 0.22);
 }
 
 .hovering {
   padding: 0 0 0.3em 0;
   position: relative;
+}
+
+.hovering:hover {
+  color: var(--hovering-text);
 }
 
 .hovering::before {
@@ -63,7 +73,7 @@
   font-weight: 600;
   text-decoration: none;
   color: var(--btn-bg);
-  border:2px solid var(--btn-bg);
+  border: 2px solid var(--btn-bg);
   outline: none;
   border-radius: 8px;
   background-color: transparent;
@@ -78,7 +88,7 @@
   left: 0;
   width: 100%;
   height: 0%;
-  background-color:var(--btn-bg);
+  background-color: var(--btn-bg);
   transition: height 0.4s ease-in-out;
   z-index: 1;
 }
