@@ -8,7 +8,7 @@ const about = {
   // all the properties are optional - can be left empty or deleted
   name: "Kalyana Kumar",
   role: "Front End | Web Developer",
-  picture: "https://i.ibb.co/XffTnq92/IMG-1234.jpg",
+  picture: "https://i.ibb.co/bjS4YwNM/IMG-1234.webp",
 
   description:
     "I build responsive user-focused frontends with React, backed by solid full-stack experience in PHP and MySql.This end-to-end perspective helps me build smarter user interfaces that carefully optimized for data exchange and real-world performance. Adaptable, eager to learn new technologies, and driven to contribute effectively to high-quality web projects from day one.",
